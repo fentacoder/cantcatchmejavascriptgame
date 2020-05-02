@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Can't catch me!</title>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.min.js"
+  integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+  crossorigin="anonymous"></script>
+  <link type="text/css" rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color: white;">
+
+    <div id="preGame" style="width: 100%;margin-top: 3vh;">
+      <h1 class="formatted-text">Can't catch me</h1>
+      <button style="display: block;margin: 1vh auto;width: auto;background-color: blue;color: white;border-radius: 5px;border: blue 1px solid;" 
+        onclick="startGame()" id="startBtn">
+        Start
+        </button>  
+    </div>
+
+    <div id="gameOverDiv" style="width: 100%;margin-top: 3vh;">
+      <h1 class="formatted-text" id="winOrLose"></h1>
+      <button style="display: block;margin: 1vh auto;width: auto;background-color: blue;color: white;border-radius: 5px;border: blue 1px solid;" 
+        onclick="startGame()" id="restartBtn">
+        Start Over
+      </button> 
+    </div>
+    
+    <div id="gameContainer" class="game-container">
+        <div id="dot" class="dot"></div>
+    </div>
+
+    <div id="dotStatus" class="dot-status"></div>
+    <script src="index.js"></script>
+</body>
+</html>
